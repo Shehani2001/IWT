@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<!-- add a title (a) --> 
+<title>News</title>
+<link rel="stylesheet" href="styles/styles.css">
+<script src="js/myScript.js"></script>
+<script>
+document.write(Date());
+</script> 
+</head> 
+<body>
+<!-- add a logo (b) --> 
+<img class="logo" src="images/cart.jpg" alt="This is a picture of a shopping cart" width="200" height="200"> 
+<!-- add a header (c)--> 
+<header>
+<center>
+<h1>Shopping Cart</h1>
+<h3 id="header">The online shopping store</h3>
+</center>
+<hr id="test"/>
+<!-- add a horizontal menu (e) --> 
+<ul class="nav">
+   <li class="list"><a href="index.html">Home</a></li>
+   <li class="list"><a href="">News</a></li>
+   <li class="list"><a href="">Contact</a></li>
+   <li class="list"><a href="">About Us</a></li>
+</ul> 
+<center>
+<div class="newslayout">
+<button class="bttnl" type="button" id="btn1" onclick="loadData('btn1')">Iphone XS</button>
+<button class="bttnl" type="button" id="btn2" onclick="loadData('btn2')">Iphone Xs Max </button> 
+<button class="bttnl" type="button" id="btn3" onclick="loadData('btn3')">Iphone 8s plus</button>
+<button class="bttnl" type="button" id="btn4" onclick="loadData('btn4')">Iphone SE</button>
+<button class="bttnl" type="button" id="avg" onclick="priceForInLoop()">Average Price</button>
+<button class="bttnl" type="button" id="avg" onclick="priceHigher()">Price higher than 1000</button>
+<button class="bttnl" type="button" id="avg" onclick="priceLower()">Price lower than 1000</button>
+</div>
+<img id="imagel" src="images/mobiles.jpg" width="200" height="200">
+<p class="textl" id="para"></p>
+<!-- add a horizontal line (d)--> 
+<hr>
+<!-- add a footer (g)--> 
+<center>
+<p>Created by Shehani Kavindya</p> 
+<a href="http://courseweb.sliit.lk">Visit to our courseweb</a> 
+</center>
+</body> 
+</html>
