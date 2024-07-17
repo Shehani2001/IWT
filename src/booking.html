@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title> booking </title>
+		<link rel="stylesheet" href="styles\booking.css">
+		<link rel="stylesheet" href="styles\new2.css">
+
+	</head>
+	<body>
+
+		<div class="menu-container">
+
+			<input type="checkbox" id="openmenu" class="hamburger-checkbox">
+
+			<div class="hamburger-icon">
+				<label for="openmenu" id="hamburger-label">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</label>
+			</div>
+
+			<div class="menu-pane">
+
+				<nav>
+					<ul class="menu-links">
+						<li>
+							<a href="###">Home</a>
+						</li>
+						<li><a href="###">About Us</a></li>
+						<li><a href="###">Bookings</a></li>
+					</ul>
+					<ul class="menu-links">
+
+						<li><a href="###">Help</a></li>
+						<li><a href="###">Contact Us</a></li>
+						<li><a href="###">bar</a></li>
+					</ul>
+
+
+				</nav>
+			</div>
+
+			<div class="body-text">
+
+				<br />
+				<h1> Book online & enjoy a range <br /> of exclusive benefits </h1>
+
+				<form method="post" action="booking.php" onsubmit="return validate()">
+					<table class="tbl">
+						<tr>
+							<td>
+								<label for="from"> From </label>
+								<input type="text" name="from" id="from" placeholder="Colombo" required>
+								<br />
+								<label for="airport1"> Airport </label>
+								<input type="text" name="from_airport" id="airport1" placeholder="Colombo International Airport" required>
+							</td>
+
+							<td>
+								<label for="to"> To </label>
+								<input type="text" name="to" id="to" placeholder="UK" required>
+								<br />
+								<label for="airport2"> Airport </label>
+								<input type="text" name="to_airport" id="airport2" placeholder="London International Airport" required>
+							</td>
+
+							<td>
+								<label for="trip"> Trip </label>
+								<select name="trip" id="trip" onchange="returnDate()">
+									<option value="Return"> Return </option>
+									<option value="One way"> One way </option>
+								</select>
+							</td>
+
+							<td>
+								<label for="depart"> Depart </label>
+								<input type="date" name="depart" id="depart">
+							</td>
+
+							<td>
+								<label for="return" id="lable"> Return </label>
+								<input type="date" name="return" id="return">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p style="font-weight:bold"> Class </p>
+								<input type="radio" id="Economy" name="class" value="Economy">
+								<label for="Economy"> Economy </label><br />
+								<input type="radio" id="Business" name="class" value="Business">
+								<label for="Business"> Business </label>
+							</td>
+							<td>
+								<p style="font-weight:bold"> Passengers </p>
+								<label for="Adult"> Adult </label>
+								<input type="number" name="adult" id="Adult" value="0"><br />
+								<label for="Child"> Child </label>
+								<input type="number" name="child" id="Child" value="0">
+							</td>
+							<td></td>
+							<td></td>
+							<td>
+								<input type="submit" value="submit" class="subButton" name="subButton">
+							</td>
+						</tr>
+					</table>
+				</form>
+
+				<script src="js/booking.js"></script>
+
+				<br /><br /><br /><br /><br />
+
+				<div class="footercontainer">
+
+					<div>
+						<table>
+							<tr>
+								<th>About us</th>
+								<th>Contact us</th>
+								<th>Privacy and policy</th>
+								<th>FAQ</th>
+								<th>Help</th>
+								<th>      </th>
+								<th></th>
+								<td colspan="2">Certificated By  <img src="images/certi1.png" alt="Certificate" width="50" height="50"></td>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><h5> Blue Horizon Airways. All rights reserved </h5></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			</div>
+	</body>	
+</html>

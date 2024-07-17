@@ -1,0 +1,40 @@
+body{
+	background-image:url('../images/img2.jpg');
+	background-color:white;
+}
+
+/* Styling for form labels */
+label {
+	display: inline-block;
+	text-align: right;
+	margin-right: 10px;
+	width: 100px;
+}
+
+/* Styling for form input fields */
+input[type="text"], input[type="date"], input[type="number"] {
+	margin-bottom: 10px;
+	padding: 5px;
+	width: 200px;
+}
+
+/* Styling for submit buttons */
+input[type="submit"] {
+	margin-top: 10px;
+	padding: 5px 10px;
+}
+
+/* Styling for submit buttons */
+	input[type="submit"] {
+	margin-top: 10px;
+	padding: 5px 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}

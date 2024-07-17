@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register</title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/reg & log.css">
+   <link rel="stylesheet" href="css/new2.css">
+
+
+</head>
+<body>
+  <!--header-->
+   <div class="menu-container">
+  
+      <input type="checkbox" id="openmenu" class="hamburger-checkbox">
+      
+     <div class="hamburger-icon">
+        <label for="openmenu" id="hamburger-label">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>    
+      </div>
+    
+        <div class="menu-pane">
+        
+          <nav>
+            <ul class="menu-links">
+    
+     
+             
+              <li><a href="###">Home</a>
+               
+              </li>
+              <li><a href="###">About Us</a></li>
+              <li><a href="###">Bookings</a></li>
+            </ul>
+             <ul class="menu-links">
+    
+              <li><a href="###">Help</a></li>
+              <li><a href="###">Contact Us</a></li>
+              <li><a href="###">bar</a></li>
+            </ul>
+            
+            
+          </nav>
+        </div>
+        <!--header-->
+       
+<div class="form-container">
+
+   <form action="register.php" method="post" enctype="multipart/form-data">
+      <h3>register now</h3>
+      <?php
+      if(isset($message)){
+         foreach($message as $message){
+            echo '<div class="message">'.$message.'</div>';
+         }
+      }
+      ?>
+      <input type="text" name="name" placeholder="enter name" class="box" required>
+      <input type="email" name="email" placeholder="enter email" class="box" required>
+
+      <input type="text" name="4n" placeholder="enter mobile number" class="box" required>
+      <input type="text" name="pnumber" placeholder="enter passport number" class="box" required>
+
+      <input type="password" name="password" placeholder="enter password" class="box" required>
+      <input type="password" name="cpassword" placeholder="confirm password" class="box" required>
+      <p>set profile picture</p>
+      <input type="file" name="image" class="box" accept="image/jpg, image/jpeg, image/png">
+      <input type="submit" name="submit" value="register now" class="btn">
+      <p>or sign-up with</p>
+      <img src="google-logo-png-google-icon-logo-png-transparent-svg-vector-bie-supply-14.png" alt="google" width="28px" height="28px">
+      <img src="Capture.JPG" alt="facebook " width="30px" height="30px">
+      <p>already have an account? <a href="login.php">login now</a></p>
+   </form>
+
+</div>
+<!--Footer -->
+<div class= "footercontainer">
+
+  <div>
+    <table>
+        <tr>
+          <th>About us</th> 
+          <th >Contact us</th>
+          <th>Privacy and policy</th>
+          <th>FAQ</th>
+          <th >Help</th>
+          <th>      </th>
+          <th></th>
+          
+          
+              <td colspan="2">Certificated By  <img src="certi1.png" alt = "Certificate" width="50" height= "50"></td>
+        
+        </tr>
+    <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    
+    <tr>
+    <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><h5>Blue horizon airline. All rights reserved </h5></td><td></td>
+    </tr>
+  
+  
+    </table>
+    </div>
+  
+  
+  </div>
+    
+  
+  <script>
+  
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  
+  </script>
+  <!--Footer -->
+  
+
+</body>
+</html>
